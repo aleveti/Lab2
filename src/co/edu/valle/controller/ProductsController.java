@@ -21,11 +21,16 @@ public class ProductsController {
         this.products = new ArrayList<>();
     }    
     
-    public Products create(String name, float price){
-        int id = Integer.parseInt((products.get(products.size()-1)))+1;
+    public String create(String name, float price){
+        int id;
+        if (products.isEmpty()){
+            id = 1;
+        }else{
+            id = (products.get(products.size())).getId()+1;
+        }        
         Products product = new Products(id, name, price);
         this.products.add(product);
-        return product;
+        return product.getName();
     }
     
     public Products update(int id, String name, float price){        

@@ -26,6 +26,10 @@ public class Menu {
             if (identificador == 1){
                 
             }
+            if (identificador == 2){
+                ProductsView menuProducto = new ProductsView();
+                menuProducto.dialogo();
+            }
         }
         
     }    

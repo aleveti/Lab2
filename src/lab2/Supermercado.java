@@ -4,6 +4,8 @@
  */
 package lab2;
 
+import co.edu.calle.vista.Menu;
+
 /**
  *
  * @author juanp
@@ -15,7 +17,9 @@ public class Supermercado {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Menu inicio = new Menu();
         
+        inicio.menu();
     }
     
 }
