@@ -26,7 +26,7 @@ public class ProductsController {
         if (products.isEmpty()){
             id = 1;
         }else{
-            id = (products.get(products.size())).getId()+1;
+            id = (products.get(products.size()-1)).getId()+1;
         }        
         Products product = new Products(id, name, price);
         this.products.add(product);
