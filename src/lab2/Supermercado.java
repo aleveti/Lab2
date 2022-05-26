@@ -4,7 +4,7 @@
  */
 package lab2;
 
-import co.edu.calle.vista.Menu;
+import co.edu.valle.vista.Menu;
 
 /**
  *
